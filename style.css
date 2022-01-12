@@ -1,0 +1,14 @@
+:root {
+  --change-mode: #fff;
+  --change-color: #333;
+}
+
+body {
+  background-color: var(--change-mode);
+  color: var(--change-color);
+  font-size: 30px;
+}
+input {
+  margin-left: 50px;
+  zoom: 2;
+}

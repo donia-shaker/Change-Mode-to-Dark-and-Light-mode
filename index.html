@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <input type="checkbox" id="switch" onclick="changeMode()" />
+      <label for="switch">Click To Change Color</label>
+    </div>
+    <script>
+      function changeMode() {
+        var checkBox = document.getElementById("switch");
+        if (checkBox.checked) {
+          document.documentElement.style.setProperty("--change-mode", "#333");
+          document.documentElement.style.setProperty("--change-color", "#fff");
+        } else {
+          document.documentElement.style.setProperty("--change-mode", "#fff");
+          document.documentElement.style.setProperty("--change-color", "#333");
+        }
+      }
+    </script>
+  </body>
+</html>
